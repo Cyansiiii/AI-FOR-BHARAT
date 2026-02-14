@@ -137,7 +137,7 @@ const HomePage = () => {
                     >
                         <div className="relative inline-block">
                             <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/50 pb-2 font-black text-6xl md:text-9xl tracking-tight leading-[0.9]">
-                                CodeSherpa
+                                CODESHERPA
                             </span>
                         </div>
                         <br />
