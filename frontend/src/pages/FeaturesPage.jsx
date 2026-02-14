@@ -5,7 +5,6 @@ import { ArrowLeft, Code2, Brain, Shield, Zap, Globe, MessageSquare, Github, Tre
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import TextRoll from '../components/TextRoll'
-import DarkVeil from '../components/DarkVeil'
 
 const FeaturesPage = () => {
     const navigate = useNavigate()
@@ -123,16 +122,6 @@ const FeaturesPage = () => {
     return (
         <div className="min-h-screen text-white relative">
             {/* DarkVeil Fixed Background */}
-            <DarkVeil
-                hueShift={200}
-                noiseIntensity={0.03}
-                scanlineIntensity={0}
-                speed={0.4}
-                scanlineFrequency={0}
-                warpAmount={0.3}
-                resolutionScale={0.75}
-            />
-            
             <Navbar />
 
             {/* Hero Section */}
@@ -158,7 +147,7 @@ const FeaturesPage = () => {
                             </TextRoll>
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
-                            Everything you need to code faster, smarter, and with confidence. 
+                            Everything you need to code faster, smarter, and with confidence.
                             Built specifically for Indian developers.
                         </p>
                     </motion.div>

@@ -72,3 +72,18 @@
 .chat-scroll::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+/* TextRoll Font */
+@font-face {
+  font-family: 'Inter ExtraBold';
+  src: url('./assets/fonts/inter_Inter-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-display {
+  font-family: 'Inter ExtraBold', 'Inter', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}

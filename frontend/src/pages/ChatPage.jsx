@@ -6,7 +6,6 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import ReactMarkdown from 'react-markdown'
 import TextRoll from '../components/TextRoll'
-import DarkVeil from '../components/DarkVeil'
 
 const ChatPage = () => {
     const navigate = useNavigate()
@@ -120,16 +119,6 @@ const ChatPage = () => {
     return (
         <div className="min-h-screen text-white relative">
             {/* DarkVeil Fixed Background */}
-            <DarkVeil
-                hueShift={200}
-                noiseIntensity={0.03}
-                scanlineIntensity={0}
-                speed={0.4}
-                scanlineFrequency={0}
-                warpAmount={0.3}
-                resolutionScale={0.75}
-            />
-            
             {/* Header */}
             <motion.header
                 initial={{ y: -100 }}
@@ -183,11 +172,10 @@ const ChatPage = () => {
                             className={`mb-6 flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
                         >
                             <div className={`max-w-[80%] ${msg.sender === 'user' ? 'order-2' : 'order-1'}`}>
-                                <div className={`rounded-2xl p-4 ${
-                                    msg.sender === 'user'
-                                        ? 'bg-gradient-to-r from-blue-600 to-purple-600'
-                                        : 'glass-dark border border-white/10'
-                                }`}>
+                                <div className={`rounded-2xl p-4 ${msg.sender === 'user'
+                                    ? 'bg-gradient-to-r from-blue-600 to-purple-600'
+                                    : 'glass-dark border border-white/10'
+                                    }`}>
                                     <div className="prose prose-invert max-w-none">
                                         <ReactMarkdown
                                             components={{

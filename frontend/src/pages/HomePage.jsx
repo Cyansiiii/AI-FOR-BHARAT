@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
-import { 
-    Sparkles, ArrowRight, Code2, Brain, Zap, Shield, 
+import {
+    Sparkles, ArrowRight, Code2, Brain, Zap, Shield,
     Globe, MessageSquare, Github, CheckCircle2, Star,
     TrendingUp, Users, Award, Rocket
 } from 'lucide-react'
@@ -12,7 +12,6 @@ import FeatureCard from '../components/FeatureCard'
 import StatsCounter from '../components/StatsCounter'
 import TestimonialCard from '../components/TestimonialCard'
 import TextRoll from '../components/TextRoll'
-import DarkVeil from '../components/DarkVeil'
 
 const HomePage = () => {
     const navigate = useNavigate()
@@ -98,16 +97,6 @@ const HomePage = () => {
 
     return (
         <div className="min-h-screen text-white overflow-hidden relative">
-            {/* DarkVeil Fixed Background - Full Screen */}
-            <DarkVeil
-                hueShift={200}
-                noiseIntensity={0.03}
-                scanlineIntensity={0}
-                speed={0.4}
-                scanlineFrequency={0}
-                warpAmount={0.3}
-                resolutionScale={0.75}
-            />
 
             <Navbar />
 
@@ -145,8 +134,8 @@ const HomePage = () => {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto"
                     >
-                        Multi-agent AI platform built for Indian developers. 
-                        Review code, learn faster, and ship with confidence. 
+                        Multi-agent AI platform built for Indian developers.
+                        Review code, learn faster, and ship with confidence.
                         <span className="text-2xl ml-2">🇮🇳</span>
                     </motion.p>
 
@@ -163,7 +152,7 @@ const HomePage = () => {
                             Start Coding Smarter
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
-                        
+
                         <button
                             onClick={() => navigate('/features')}
                             className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full font-semibold text-lg hover:bg-white/10 transition-all duration-300"
