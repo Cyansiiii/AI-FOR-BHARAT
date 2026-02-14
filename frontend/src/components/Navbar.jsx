@@ -39,11 +39,11 @@ const Navbar = () => {
                         onClick={() => navigate('/')}
                         className="flex items-center gap-2 group"
                     >
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-white-600 to-white-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                             <Sparkles className="w-5 h-5" />
                         </div>
-                        <TextRoll className="text-xl font-black gradient-text-blue inline-block">
-                            CodeSherpa
+                        <TextRoll className="text-xl font-black gradient-text-white inline-block">
+                            CODESHERPA
                         </TextRoll>
                     </button>
 
@@ -73,7 +73,7 @@ const Navbar = () => {
                         </a>
                         <button
                             onClick={() => navigate('/chat')}
-                            className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full font-semibold text-sm hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
+                            className="px-6 py-2 bg-gradient-to-r from-black-600 to-purple-600 rounded-full font-semibold text-sm hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
                         >
                             Get Started
                         </button>
@@ -127,7 +127,7 @@ const Navbar = () => {
                                     navigate('/chat')
                                     setIsMobileMenuOpen(false)
                                 }}
-                                className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-semibold"
+                                className="px-4 py-2 bg-gradient-to-r from-black-600 to-purple-600 rounded-lg font-semibold"
                             >
                                 Get Started
                             </button>

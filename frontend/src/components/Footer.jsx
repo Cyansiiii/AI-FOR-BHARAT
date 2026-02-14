@@ -10,7 +10,7 @@ const Footer = () => {
                     {/* Brand */}
                     <div className="col-span-2">
                         <TextRoll className="text-2xl font-black gradient-text-blue inline-block mb-4">
-                            CodeSherpa
+                            CODESHERPA
                         </TextRoll>
                         <p className="text-gray-400 mb-4">
                             Your AI pair programmer built for Indian developers. 
