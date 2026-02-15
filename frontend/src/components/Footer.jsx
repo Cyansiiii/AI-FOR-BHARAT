@@ -4,8 +4,8 @@ import TextRoll from './TextRoll'
 
 const Footer = () => {
     return (
-        <footer className="relative border-t border-white/10 py-12 px-4">
-            <div className="max-w-7xl mx-auto">
+        <footer className="relative border-t border-white/10 py-12 px-4 overflow-hidden">
+            <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     {/* Brand */}
                     <div className="col-span-2">
@@ -13,7 +13,7 @@ const Footer = () => {
                             CODESHERPA
                         </TextRoll>
                         <p className="text-gray-400 mb-4">
-                            Your AI pair programmer built for Indian developers. 
+                            Your AI pair programmer built for Indian developers.
                             Code smarter, ship faster, learn better.
                         </p>
                         <div className="flex items-center gap-4">
